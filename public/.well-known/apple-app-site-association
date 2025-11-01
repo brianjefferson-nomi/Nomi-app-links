@@ -1,1 +1,20 @@
+import { NextResponse } from 'next/server';
 
+export async function GET(request) {
+  const applinks = {
+    "applinks": {
+      "details": [
+        {
+          "appID": "app.rork.nomi", // e.g., "T5678Y.com.nomi.app"
+          "paths": ["*"] // This allows all paths
+        }
+      ]
+    }
+  };
+
+  return new NextResponse(JSON.stringify(applinks), {
+    headers: {
+      'Content-Type': 'application/json', // This header is mandatory for Apple
+    },
+  });
+}
