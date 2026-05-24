@@ -1,0 +1,23 @@
+{
+  "name": "nomi-links",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "expo": "~54.0.34",
+    "react-native": "0.81.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
